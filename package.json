@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"cd main; pnpm dev \" \"cd mfe1; pnpm dev\" \"cd mfe2; pnpm dev \"",
+    "build": "concurrently \"cd main; pnpm build \" \"cd mfe1; pnpm build\" \"cd mfe2; pnpm build \"",
+    "serve": "concurrently \"cd main; pnpm start \" \"cd mfe1; pnpm start\" \"cd mfe2; pnpm start \"",
+    "postinstall": "concurrently \"cd main; pnpm\" \"cd mfe1; pnpm\" \"cd mfe2; pnpm\"",
+    "install": "concurrently \"cd main; pnpm install\" \"cd mfe1; pnpm install\" \"cd mfe2; pnpm install\"",
+    "clean": "concurrently \"cd main && rm -rf node_modules package-lock.json\" \"cd mfe1 && rm -rf node_modules package-lock.json\" \"cd mfe2 && rm -rf node_modules package-lock.json\""
+  },
+  "dependencies": {
+    "concurrently": "9.0.1"
+  }
+}
