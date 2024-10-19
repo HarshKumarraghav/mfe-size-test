@@ -1,7 +1,10 @@
 const NextFedrationPlugin = require("@module-federation/nextjs-mf");
 
-const MFE1_APP_URL = "http://localhost:3001";
-const MFE2_APP_URL = "http://localhost:3002";
+const MFE1_APP_URL =
+  process.env.NEXT_PUBLIC_MFE1_URL || "http://localhost:3001";
+const MFE2_APP_URL =
+  process.env.NEXT_PUBLIC_MFE2_URL || "http://localhost:3002";
+
 const remotes = (isServer) => {
   const location = isServer ? "ssr" : "chunks";
   return {
