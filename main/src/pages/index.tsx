@@ -37,10 +37,10 @@ export default function Home() {
             height={38}
             priority
           />
-          <ol>
-            <li>this is host app linking routes to other mfe's</li>
-          </ol>
-
+          <h1>
+            this is <code>HOST</code> app linking routes to other{" "}
+            <code>MicroFrontend</code>
+          </h1>
           <div className={styles.ctas}>
             <button
               onClick={() => router.push("/mfe1")}
