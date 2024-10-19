@@ -38,7 +38,7 @@ export default function Home() {
             priority
           />
           <h1>
-            this is <code>HOST</code> app linking routes to other{" "}
+            this is <code>Micro-frontend 1</code> app linking routes to other{" "}
             <code>MicroFrontend</code>
           </h1>
 
