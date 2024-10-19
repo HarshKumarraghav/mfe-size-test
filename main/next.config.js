@@ -22,9 +22,6 @@ const nextConfig = {
         remotes: remotes(isServer),
         filename: "static/chunks/remoteEntry.js",
         exposes: {},
-        extraOptions: {
-          exposePages: true,
-        },
       })
     );
     return config;
